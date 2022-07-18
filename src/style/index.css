@@ -1,0 +1,34 @@
+/* Ici : le style commun à toute l'application : */
+
+:root {
+  --main: hsla(196, 64%, 37%, 1);
+  --secondary: hsla(174, 79%, 43%, 1);
+  --warning: hsla(37, 100%, 73%, 1);
+  --light: hsla(40, 88%, 97%, 1);
+  --error: hsla(358, 99%, 71%, 1);
+  --dark: hsla(196, 63%, 16%, 1);
+
+  --width: 95%;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../assets/images/pattern.webp");
+  background-repeat: repeat;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

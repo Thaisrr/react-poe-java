@@ -1,0 +1,33 @@
+.App {
+  width: 90%;
+  margin: auto;
+  background-color: var(--light);
+  padding: 20px;
+
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  width: var(--width);
+  margin: auto;
+}
+
+.main {
+  width: var(--width);
+  margin: 70px auto;
+
+}
+
+h1 {
+  color: var(--main);
+}
+
+h2 {
+  color: var(--error);
+}
+
+article {
+  margin-bottom: 60px;
+}
