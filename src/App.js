@@ -4,6 +4,7 @@ import Logo from "./components/Logo";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Router from "./pages/Router";
 import Navigation from "./components/Navigation";
+import StaticData from "./pages/StaticData";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Presentation/>} />
                     <Route path="/routing" element={<Router />}  />
+                    <Route path="/static" element={<StaticData />} />
                 </Routes>
             </main>
         </BrowserRouter>

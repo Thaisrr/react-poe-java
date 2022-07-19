@@ -11,6 +11,9 @@ const Navigation = () => {
                 <li>
                     <NavLink to="/routing">Router</NavLink>
                 </li>
+                <li>
+                    <NavLink to="/static">Données Statiques</NavLink>
+                </li>
             </ul>
         </nav>
     )
