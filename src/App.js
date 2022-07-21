@@ -5,6 +5,10 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Router from "./pages/Router";
 import Navigation from "./components/Navigation";
 import StaticData from "./pages/StaticData";
+import Props from "./pages/Props";
+import Reactivity from "./pages/Reactivity";
+import Formulaire from "./pages/Formulaire";
+import Data from "./pages/Data";
 
 
 function App() {
@@ -21,6 +25,10 @@ function App() {
                     <Route path="/" element={<Presentation/>} />
                     <Route path="/routing" element={<Router />}  />
                     <Route path="/static" element={<StaticData />} />
+                    <Route path="/props" element={<Props/>} />
+                    <Route path='/reactivity' element={<Reactivity/>} />
+                    <Route path='/form' element={<Formulaire/>} />
+                    <Route path='/data' element={<Data/>} />
                 </Routes>
             </main>
         </BrowserRouter>

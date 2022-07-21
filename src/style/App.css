@@ -31,3 +31,18 @@ h2 {
 article {
   margin-bottom: 60px;
 }
+
+.card {
+  width: 45%;
+  margin: 30px auto;
+  background-color: var(--warning);
+  color: var(--dark);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
