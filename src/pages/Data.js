@@ -1,22 +1,28 @@
-import axios from "axios";
 import {useState} from "react";
+import {getJoke} from "../utils/services/JokeService";
 
 const Data = function () {
     const [blague, setBlague] = useState('');
+    const [blague2, setBlague2] = useState({});
 
-    function getJoke() {
-        axios.get('https://v2.jokeapi.dev/joke/Programming?&safe-mode&type=single')
-            .then(({data : {joke}}) => setBlague(joke))
-            .catch(err => alert('Oups, c\'est cassé !'))
+    function load() {
+       getJoke('single')
+           .then(({joke}) => setBlague(joke))
     }
 
-    async function getJokeAsync() {
-        try {
-            const {data: {joke}} = await axios.get('https://v2.jokeapi.dev/joke/Programming?&safe-mode&type=single');
-            setBlague(joke);
-        } catch {
-            alert(`Oups, c'est encore cassé`)
-        }
+    function loadTwoPart() {
+        getJoke('twopart')
+            .then(({setup, delivery}) => setBlague2({setup, delivery}))
+    }
+/*
+    async function asyncLoad() {
+        const joke = await getJoke();
+        setBlague(joke);
+    }
+*/
+    const loadAll = function () {
+        load();
+        loadTwoPart();
     }
 
     return (
@@ -24,10 +30,20 @@ const Data = function () {
             <h1>Gérer les requêtes</h1>
 
             <p>
-                <button onClick={getJoke}>Charger les données</button>
+                <button onClick={loadAll}>Charger les données</button>
             </p>
 
-                <div className="card">{blague}</div>
+            {blague && <div className="card">{blague}</div>}
+
+            {
+              blague2 && (
+                  <div className="card">
+                      <h4>{blague2?.setup}</h4>
+                      <p>{blague2?.delivery}</p>
+                  </div>
+              )
+            }
+
 
         </>
     )

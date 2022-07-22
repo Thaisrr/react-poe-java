@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Noach",
+      "last_name": "Greenroad",
+      "email": "ngreenroad0@google.nl",
+      "gender": "Male"
+    },
+    {
+      "id": 2,
+      "first_name": "Aurilia",
+      "last_name": "Gandar",
+      "email": "agandar1@nytimes.com",
+      "gender": "Female"
+    },
+    {
+      "id": 3,
+      "first_name": "Myca",
+      "last_name": "Lie",
+      "email": "mlie2@yahoo.co.jp",
+      "gender": "Male"
+    },
+    {
+      "id": 4,
+      "first_name": "Davine",
+      "last_name": "Bilt",
+      "email": "dbilt3@umn.edu",
+      "gender": "Female"
+    },
+    {
+      "id": 5,
+      "first_name": "Kimmi",
+      "last_name": "Chamberlain",
+      "email": "kchamberlain4@usda.gov",
+      "gender": "Female"
+    },
+    {
+      "id": 6,
+      "first_name": "Gaynor",
+      "last_name": "Robshaw",
+      "email": "grobshaw5@usatoday.com",
+      "gender": "Female"
+    },
+    {
+      "id": 7,
+      "first_name": "Colan",
+      "last_name": "Buttler",
+      "email": "cbuttler6@spiegel.de",
+      "gender": "Genderfluid"
+    },
+    {
+      "id": 8,
+      "first_name": "Noellyn",
+      "last_name": "Creed",
+      "email": "ncreed7@narod.ru",
+      "gender": "Female"
+    },
+    {
+      "id": 9,
+      "first_name": "Neddie",
+      "last_name": "Antic",
+      "email": "nantic8@amazonaws.com",
+      "gender": "Male"
+    },
+    {
+      "id": 10,
+      "first_name": "Melantha",
+      "last_name": "Bencher",
+      "email": "mbencher9@lulu.com",
+      "gender": "Agender"
+    },
+    {
+      "last_name": "Jean Michel",
+      "first_name": "La Tourte",
+      "email": "jeanmichou@mail.fr",
+      "gender": "Male",
+      "id": 11
+    },
+    {
+      "last_name": "Doe",
+      "first_name": "Jane",
+      "email": "jdoe@mail.fr",
+      "gender": "Genderfluid",
+      "id": 12
+    },
+    {
+      "email": "toto@mail.fr",
+      "password": "$2a$10$Me7PY9uZXIKQ7syd2dAnOezAO3j5508TyJ/KInhLajF7.lTT/Ip3S",
+      "id": 13
+    }
+  ],
+  "secrets" : [
+    {"id": 256, "message":  "Ce message est top secret"},
+    {"id": 257, "message":  "John Snow n'est pas mort"},
+    {"id": 258, "message":  "Le ciel n'est pas vraiment bleu"}
+  ]
+}

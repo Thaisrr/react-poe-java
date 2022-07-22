@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {func} from "prop-types";
 import {useForm} from "react-hook-form";
 
 const Formulaire = function () {
